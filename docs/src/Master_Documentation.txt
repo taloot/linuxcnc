@@ -280,6 +280,8 @@ include::motion/kinematics.txt[]
 
 include::motion/5-axis-kinematics.txt[]
 
+include::motion/switchkins.txt[]
+
 include::motion/pid-theory.txt[]
 
 include::motion/external-offsets.txt[]
