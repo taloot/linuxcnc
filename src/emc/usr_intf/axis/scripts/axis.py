@@ -2484,11 +2484,10 @@ class TclCommands(nf.TclCommands):
             set_motion_teleop(0)
    
     def ensure_mdi(*event):
-        # called from axis.tcl on tab raisecmd
+        # for F5 key binding
         if not manual_ok(): return
         set_motion_teleop(0)
         ensure_mode(linuxcnc.MODE_MDI)
-        set_motion_teleop(1)
         s.poll()
 
     def redraw(*ignored):
@@ -3737,6 +3736,7 @@ def get_coordinate_font(large):
 
 root_window.bind("<Key-F3>", pane_top + ".tabs raise manual")
 root_window.bind("<Key-F5>", pane_top + ".tabs raise mdi")
+root_window.bind("<Key-F5>", '+' + "ensure_mdi")
 root_window.bind("<Key-F5>", "+" + tabs_mdi + ".command selection range 0 end")
 root_window.bind("<Key-F4>", commands.next_tab)
 
