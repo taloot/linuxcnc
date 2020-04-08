@@ -1,6 +1,6 @@
 [[cha:dh-parameters]] (((DH parameters Examples)))
 
-= DH parameters
+= Setting up Denavit-Hartenberg (DH) parameters for genserkins
 
 == rv-6sl
 
